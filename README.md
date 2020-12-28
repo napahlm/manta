@@ -2,6 +2,10 @@
 
 A basic description of the existing control software.
 
+## manta_msgs
+
+Custom message package. Using the pre-existing for now, and this should get its own repository for easy downloads to PCs and RPis from the terminal. As far as I know ROS does not support sharng a message library only created on the master.
+
 ## joy
 
 Pre-existing joystick package reading joystick inputs and publishing it to a topic.
