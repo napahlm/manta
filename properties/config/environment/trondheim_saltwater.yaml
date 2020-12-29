@@ -1,0 +1,17 @@
+# Environmental parameters for place of testing: Trondheim, Norway
+
+# Local gravity acquired "wolframalpha.com" on 29.12.2020
+# Local average (10 years) atmospheric pressure acquired from "wolframalpha.com" on 29.12.2020
+# Saltwater density acquired from ocean characteristic at 10m depth from "wolframalpha.com"
+
+# [m/s²]
+gravity:
+  acceleration: 9.82203
+
+# [Pa]
+atmosphere:
+  pressure: 101000
+
+# [kg/m³]
+water:
+  density: 1026
