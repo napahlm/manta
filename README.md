@@ -1,40 +1,19 @@
-# ROV Control Structure
+# ROV Software
 
-A basic description of the existing control software.
+This repository is a starting point for gathering the necessary, and unnecessary, software to make use of the Manta underwater drone. It runs on ROS Noetic.
+
+## control
+
+Contains packages for the complete control system of the ROV.
+
+## perception
+
+Contains packages handling all raw sensor data like pressure, camera feed and position.
 
 ## manta_msgs
 
-Custom message package. Using the pre-existing for now, and this should get its own repository for easy downloads to PCs and RPis from the terminal. As far as I know ROS does not support sharng a message library only created on the master.
+Custom message package for specific tasks done.
 
-## joy
+## testing
 
-Pre-existing joystick package reading joystick inputs and publishing it to a topic.
-
-## joy_map
-
-Mapping the joystick input topic to whatever we want.
-
-## controller
-
-Controls position. At the moment a controller for an open loop structure.
-
-## allocator
-
-Allocates the right amount of force (N) to each thruster to maintain a stable position.
-
-## thruster_interface
-
-Converts the force into PWM-signals determined by the T200 force graph.
-
-## pwm_interface
-
-Simple python script using the local variable consisting of PWM signals and sends the to the ESC's. Uses the PCA9865 board from Adafruit.
-
-### sensor_node
-
-Simple node reading raw data from sensors. Mainly pressure and IMU data.
-
-### estimator
-
-Estimates the position given at least pressure (depth) and IMU data (position, velocity, acceleration)
-
+Directory for testing packages and other executable files.
